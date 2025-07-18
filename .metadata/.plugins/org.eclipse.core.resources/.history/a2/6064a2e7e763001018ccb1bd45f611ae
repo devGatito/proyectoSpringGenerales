@@ -1,0 +1,54 @@
+package com.mx.CrudCanciones.Controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mx.CrudCanciones.Dominio.Canciones;
+import com.mx.CrudCanciones.Services.Implementacion;
+
+
+@RestController
+@RequestMapping("/Api/WebService")
+@CrossOrigin
+
+public class CancionWS {
+	 @Autowired
+	    Implementacion imp;
+
+	    @PostMapping("/guardar")
+	    public void guardar(@RequestBody Canciones cancion) {
+	        imp.guardar(cancion);
+	        System.out.println("Se guardo");
+	    }
+
+	    @PutMapping("/editar")
+	    public void editar(@RequestBody Canciones cancion) {
+	        imp.editar(cancion);
+	        System.out.println("Se edito");
+	    }
+
+	    @DeleteMapping("/eliminar")
+	    public void eliminar(@RequestBody Canciones cancion) {
+	        imp.eliminar(cancion);
+	        System.out.println("Se elimino");
+	    }
+
+	    @PostMapping("/buscar")
+	    public Canciones buscar(@RequestBody Canciones cancion) {
+	        return imp.buscar(cancion);
+	    }
+
+	    @GetMapping("/listar")
+	    public List<Canciones> listar() {
+	        return imp.listar();
+	    }
+}

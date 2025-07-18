@@ -1,0 +1,58 @@
+package com.mx.CrudAutosJunit.Services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mx.CrudAutosJunit.Dao.AutosDao;
+import com.mx.CrudAutosJunit.Dominio.Autos;
+
+@Service
+public class Implementacion implements Metodos{
+	
+	@Autowired
+	AutosDao autosDao;
+
+	@Override
+	public void guardar(Autos auto) {
+		autosDao.save(auto);
+		System.out.println("Se guardo");
+		
+	}
+
+	@Override
+	public void editar(Autos auto) {
+		autosDao.save(auto);
+		System.out.println("Se edito");
+
+		
+	}
+
+	@Override
+	public void eliminar(Autos auto) {
+		
+		autosDao.delete(auto);
+		System.out.println("Se borro");
+
+		
+	}
+
+	@Override
+	public Autos buscar(Autos auto) {
+		// TODO Auto-generated method stub
+		return autosDao.findById(auto.getId()).orElse(null);
+	}
+
+	@Override
+	public List<Autos> listar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	/*
+	 * La inyeccion de dependencias con @Autowired- se utiliza
+	 * para crear una unica instancia del objeto 
+	 * */
+
+}

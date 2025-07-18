@@ -1,0 +1,48 @@
+package com.mx.CrudCanciones.Dominio;
+
+import java.sql.Date;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Entity
+@Table(name = "CANCION")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
+
+public class Cancion {
+
+	@Id
+	private int id;
+	private String nombre;
+	private String cantante;
+	private String autor;
+	private int precio;
+	private String genero;
+	private int duracion_segundos;
+	private String album;
+	
+	@Column(name ="ANIO_LANZAMIENTO", columnDefinition = "DATE")
+	Date anioLanzammiento;
+	private boolean estado; 
+	
+
+	/*
+	 * ID NUMBER PRIMARY KEY, 
+	 * NOMBRE NVARCHAR2(50), CANTANTE NVARCHAR2(50), AUTOR
+	 * NVARCHAR2(50), PRECIO NUMBER, GENERO NVARCHAR2(50), DURACION_SEGUNDOS NUMBER,
+	 * ALBUM NVARCHAR2(100), ANIO_LANZAMIENTO DATE, DISPONIBLE NUMBER(1)
+	 * 
+	 * 
+	 */
+}

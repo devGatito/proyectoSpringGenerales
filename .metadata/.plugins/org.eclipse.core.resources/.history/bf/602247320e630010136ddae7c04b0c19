@@ -1,0 +1,5 @@
+package com.mx.Celulares.Dao;
+
+public class CelularDao {
+
+}

@@ -1,0 +1,48 @@
+package com.mx.Empleados.Services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.mx.Empleados.Dao.EmpleadosDao;
+import com.mx.Empleados.Dominio.Empleados;
+
+public class Implementacion implements Metodos{
+
+	@Autowired
+	EmpleadosDao empleadosDao;
+	@Override
+	public void guardar(Empleados empleado) {
+		// TODO Auto-generated method stub
+		empleadosDao.save(empleado);
+		System.out.println("Se guardo el empleado");
+		
+	}
+
+	@Override
+	public void editar(Empleados empleado) {
+		// TODO Auto-generated method stub
+		empleadosDao.save(empleado);
+		System.out.println("Se edito el empleado");
+		
+	}
+
+	@Override
+	public void eliminar(Empleados empleado) {
+		empleadosDao.delete(empleado);
+		System.out.println("Se elimino el empleado");		
+	}
+
+	@Override
+	public Empleados buscar(Empleados empleado) {
+		// TODO Auto-generated method stub
+		return empleadosDao.findById(empleado.getId()).orElse(null);
+	}
+
+	@Override
+	public List<Empleados> listar() {
+		// TODO Auto-generated method stub
+		return (List<Empleados>) empleadosDao.findAll();
+	}
+
+}

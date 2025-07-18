@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CancionesApplicationTests" project="Canciones" tests="5" started="5" failures="0" errors="1" ignored="0">
+  <testsuite name="com.mx.CrudCanciones.CancionesApplicationTests" time="2.067" displayname="CancionesApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CancionesApplicationTests]">
+    <testcase name="buscar" classname="com.mx.CrudCanciones.CancionesApplicationTests" time="1.54" displayname="buscar()" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CancionesApplicationTests]/[method:buscar()]"/>
+    <testcase name="editar" classname="com.mx.CrudCanciones.CancionesApplicationTests" time="0.09" displayname="editar()" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CancionesApplicationTests]/[method:editar()]">
+      <error>org.springframework.dao.InvalidDataAccessApiUsageException: Entity must not be null
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:371)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:246)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:343)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy138.save(Unknown Source)
+	at com.mx.CrudCanciones.Services.Implementacion.editar(Implementacion.java:25)
+	at com.mx.CrudCanciones.CancionesApplicationTests.editar(CancionesApplicationTests.java:58)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.IllegalArgumentException: Entity must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:181)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:650)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:734)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 10 more
+
+</error>
+    </testcase>
+    <testcase name="listar" classname="com.mx.CrudCanciones.CancionesApplicationTests" time="0.332" displayname="listar()" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CancionesApplicationTests]/[method:listar()]"/>
+    <testcase name="eliminar" classname="com.mx.CrudCanciones.CancionesApplicationTests" time="0.035" displayname="eliminar()" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CancionesApplicationTests]/[method:eliminar()]"/>
+    <testcase name="guardar" classname="com.mx.CrudCanciones.CancionesApplicationTests" time="0.058" displayname="guardar()" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CancionesApplicationTests]/[method:guardar()]"/>
+  </testsuite>
+</testrun>

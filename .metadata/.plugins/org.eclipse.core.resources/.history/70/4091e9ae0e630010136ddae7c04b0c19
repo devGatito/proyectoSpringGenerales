@@ -1,0 +1,15 @@
+package com.mx.Celulares.Services;
+
+import com.mx.Celulares.Dominio.Celulares;
+
+public interface CelularService {
+	void guardar(Celulares celular);
+
+	void eliminar(Celulares celular);
+
+	void editar(Celulares celular);
+
+	Celulares buscar(Celulares celular);
+
+}
+//cru

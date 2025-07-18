@@ -1,0 +1,5 @@
+package com.mx.CrudAutosJunit.Controller;
+
+public class AutosWS {
+
+}

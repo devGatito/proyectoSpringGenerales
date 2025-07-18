@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CancionesApplicationTests" project="Canciones" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="com.mx.CrudCanciones.CancionesApplicationTests" time="1.581" displayname="CancionesApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CancionesApplicationTests]">
+    <testcase name="buscar" classname="com.mx.CrudCanciones.CancionesApplicationTests" time="1.161" displayname="buscar()" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CancionesApplicationTests]/[method:buscar()]"/>
+    <testcase name="editar" classname="com.mx.CrudCanciones.CancionesApplicationTests" time="0.091" displayname="editar()" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CancionesApplicationTests]/[method:editar()]"/>
+    <testcase name="listar" classname="com.mx.CrudCanciones.CancionesApplicationTests" time="0.197" displayname="listar()" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CancionesApplicationTests]/[method:listar()]"/>
+    <testcase name="eliminar" classname="com.mx.CrudCanciones.CancionesApplicationTests" time="0.057" displayname="eliminar()" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CancionesApplicationTests]/[method:eliminar()]"/>
+    <testcase name="guardar" classname="com.mx.CrudCanciones.CancionesApplicationTests" time="0.057" displayname="guardar()" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CancionesApplicationTests]/[method:guardar()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,5 @@
+package com.mx.CrudAutosJunit.Dominio;
+
+public class Autos {
+
+}

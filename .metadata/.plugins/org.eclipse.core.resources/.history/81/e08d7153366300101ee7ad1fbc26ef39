@@ -1,0 +1,60 @@
+package com.mx.CrudAutosJunit.Dominio;
+
+import java.sql.Date;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+
+
+@Entity 
+@Table(name = "VEHICULOS_2025")
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@Getter
+@Setter
+@Data
+
+public class Autos {
+
+	/*
+	 * 
+	 * CREATE TABLE VEHICULOS_2025(
+ID NUMBER PRIMARY KEY,
+PLACA NVARCHAR2(50),
+MODELO NVARCHAR2(50),
+COLOR NVARCHAR2(50),
+NUMERO_PUERTAS NUMBER,
+PRECIO NUMBER,
+CILINDROS NUMBER,
+FECHA_VENTAS DATE
+);
+	 * */
+	
+	@Id
+	int id;
+	String placa;
+	String modelo;
+	String color;
+	@Column(name = "NUMERO_PUERTAS", columnDefinition = "NUMBER", nullable  = false)
+	int numeroPuertas;
+	double precio;
+	int cilindros;
+	@Column(name= "FECHA_VENTAS", columnDefinition = "DATE")
+	Date fechaVentas;
+	
+	
+	
+	
+
+	
+}

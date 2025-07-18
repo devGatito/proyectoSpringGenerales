@@ -1,0 +1,48 @@
+package com.mx.CrudComputadoras.Service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mx.CrudComputadoras.Dao.ComputadorasDao;
+import com.mx.CrudComputadoras.Dominio.Computadoras;
+
+@Service
+
+public class Implementacion implements Metodos{
+
+	@Autowired
+    ComputadorasDao dao;
+	
+	@Override
+	public void guardar(Computadoras computadora) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editar(Computadoras computadora) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eliminar(Computadoras computadora) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Computadoras buscar(Computadoras computadora) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Computadoras> listar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

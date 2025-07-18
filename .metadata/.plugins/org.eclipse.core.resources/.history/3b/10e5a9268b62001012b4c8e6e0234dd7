@@ -1,0 +1,10 @@
+package com.mx.Empleados.Dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository // indicar 
+
+public interface EmpleadosDao {
+	
+
+}

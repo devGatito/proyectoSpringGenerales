@@ -1,0 +1,5 @@
+package com.mx.CrudAutosJunit.Dao;
+
+public interface AutosDao {
+
+}

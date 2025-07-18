@@ -1,0 +1,112 @@
+package com.mx.CrudAutosJunit;
+
+import static org.junit.Assert.assertFalse;
+
+import java.sql.Date;
+import java.util.List;
+
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.mx.CrudAutosJunit.Dominio.Autos;
+import com.mx.CrudAutosJunit.Services.Implementacion;
+
+import jakarta.persistence.Column;
+
+@RunWith(SpringRunner.class)
+
+
+@SpringBootTest /* 
+JNIT es para realizar pruebas unitarias
+* Es un framework de la estrucura para realizar pruebas unitarias
+* trabajas con las notaciones es necesario para incluir una libreria o dependencia que ya incluye de 
+* que ya incluye en la mayoria de las tecnologias java,eclipse, maeven, netbeans, bluej, cuando realizamos pruebas unitarias
+* es practicamente utilizar codigo duro, puede estar encendido el servidor o no 
+* unitaria llega a la bd
+* 
+* Mokito - es un framework de junit y solo pruebas de simulacion se utliza regularmente para verificar que los metodos 
+*/
+
+/*
+ * 
+ * @test
+ * order(1).... order(n)
+ * @before, @After
+ * @ignore
+ * 
+ * @testtRunner para ello arracamos la clase pruebas initarias 
+ */
+class CrudAutosJunitApplicationTests {
+
+	@Autowired
+	Implementacion imp;
+	
+	Autos auto = new Autos();
+	
+	@Test
+	@Order(1)
+	public void listar() {
+		List<Autos>lista = imp.listar();
+		System.out.print("lista de empleados" + lista);
+		assertFalse(lista.isEmpty());
+		
+	}
+	
+	/*
+	@Test
+	@Order(0)
+	public void guardar() {
+	
+		
+		
+		auto.setId(4);
+		auto.setPlaca("lol");
+		auto.setModelo("23");
+		auto.setColor("56");
+		auto.setNumeroPuertas(2);
+		auto.setPrecio(5000);
+		auto.setCilindros(5);
+		auto.setFechaVentas(new Date(1888,04,06));
+		imp.guardar(auto);
+		
+	
+		
+		
+		
+		
+
+		
+	}
+		
+	*/	
+	
+	@Test
+	@Order(2)
+	public void BuscarId() {
+		auto.setId(1);
+		Autos emplBuscar = imp.buscar(auto);
+		System.out.print("Se encontro" + emplBuscar);
+		
+	}
+	
+	
+	@Test
+	@Order(3)
+	public void edtar() {
+		auto.setId(1);
+		Autos emplBuscar = imp.buscar(auto);
+		System.out.print("Se encontro empleado a editr" + emplBuscar);
+		
+		emplBuscar.setCilindros(3);
+		imp.editar(emplBuscar);
+		System.out.println(emplBuscar);
+		
+	}
+	
+	
+
+}

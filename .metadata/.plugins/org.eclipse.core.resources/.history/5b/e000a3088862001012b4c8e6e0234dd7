@@ -1,0 +1,16 @@
+package com.mx.Empleados.Dominio;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+/*
+ * 
+ * Lombok es una depedencia para el ahorro de codigo reptitivo
+ * trabaja con esteorotipos
+ * */
+
+@Entity // indica que esta clase va a representar una entidad
+@Table(name = "EMPLEADOS") // Entidad que va representar
+public class Empleados {
+
+}

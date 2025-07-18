@@ -1,0 +1,33 @@
+package com.mx.Empleados.Dominio;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+/*
+ * 
+ * Lombok es una depedencia para el ahorro de codigo reptitivo
+ * trabaja con esteorotipos
+ * */
+
+@Entity // indica que esta clase va a representar una entidad
+@Table(name = "EMPLEADOS") // Entidad que va representar una clase en java
+@NoArgsConstructor //constructor vacio
+@AllArgsConstructor //constructor con parametros
+@ToString //concatenar
+@Getter // encapsulamiento
+@Setter
+@Data //encapsulamiento
+public class Empleados {
+	
+	
+	@Id
+	int id;
+
+}

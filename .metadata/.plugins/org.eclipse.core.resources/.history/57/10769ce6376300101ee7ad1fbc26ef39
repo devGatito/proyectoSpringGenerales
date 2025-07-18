@@ -1,0 +1,10 @@
+package com.mx.CrudAutosJunit.Services;
+
+import com.mx.CrudAutosJunit.Dominio.Autos;
+
+public interface Metodos {
+void guardar(Autos auto);
+void editar(Autos auto);
+void eliminar(Autos auto);
+void buscar(Autos auto);
+}

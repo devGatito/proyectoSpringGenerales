@@ -1,0 +1,5 @@
+package com.mx.CrudComputadoras.Dominio;
+
+public class Computadoras {
+
+}

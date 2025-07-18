@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CrudCancionesApplicationTests" project="CrudCanciones" tests="5" started="5" failures="0" errors="1" ignored="0">
+  <testsuite name="com.mx.CrudCanciones.CrudCancionesApplicationTests" time="2.2" displayname="CrudCancionesApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CrudCancionesApplicationTests]">
+    <testcase name="buscar" classname="com.mx.CrudCanciones.CrudCancionesApplicationTests" time="1.589" displayname="buscar()" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CrudCancionesApplicationTests]/[method:buscar()]"/>
+    <testcase name="editar" classname="com.mx.CrudCanciones.CrudCancionesApplicationTests" time="0.065" displayname="editar()" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CrudCancionesApplicationTests]/[method:editar()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.mx.CrudCanciones.Dominio.Canciones.setPrecio(double)" because "editar" is null
+	at com.mx.CrudCanciones.CrudCancionesApplicationTests.editar(CrudCancionesApplicationTests.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+</error>
+    </testcase>
+    <testcase name="listar" classname="com.mx.CrudCanciones.CrudCancionesApplicationTests" time="0.362" displayname="listar()" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CrudCancionesApplicationTests]/[method:listar()]"/>
+    <testcase name="eliminar" classname="com.mx.CrudCanciones.CrudCancionesApplicationTests" time="0.035" displayname="eliminar()" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CrudCancionesApplicationTests]/[method:eliminar()]"/>
+    <testcase name="guardar" classname="com.mx.CrudCanciones.CrudCancionesApplicationTests" time="0.132" displayname="guardar()" uniqueid="[engine:junit-jupiter]/[class:com.mx.CrudCanciones.CrudCancionesApplicationTests]/[method:guardar()]"/>
+  </testsuite>
+</testrun>

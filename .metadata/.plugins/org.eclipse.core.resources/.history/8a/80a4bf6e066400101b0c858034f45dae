@@ -1,0 +1,18 @@
+package com.mx.CrudCanciones;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.mx.CrudCanciones.Dominio.Cancion;
+import com.mx.CrudCanciones.Services.Implementacion;
+
+@SpringBootTest
+class CancionesApplicationTests {
+
+    @Autowired
+    Implementacion imp;
+
+    Cancion cancion = new Cancion();
+
+}

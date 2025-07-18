@@ -1,0 +1,10 @@
+package com.mx.Empleados.Dominio;
+
+
+/*
+ * 
+ * Lombok es una depedencia para el ahorro de codigo reptitivo
+ * */
+public class Empleados {
+
+}

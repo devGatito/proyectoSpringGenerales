@@ -1,0 +1,39 @@
+package com.mx.CrudCanciones.Services;
+
+import java.util.List;
+
+import com.mx.CrudCanciones.Dominio.Canciones;
+
+public class Implementacion implements Metodos{
+
+	@Override
+	public void guardar(Canciones cancion) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editar(Canciones cancion) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eliminar(Canciones cancion) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Canciones buscar(Canciones cancion) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Canciones> listar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

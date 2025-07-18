@@ -1,0 +1,39 @@
+package com.mx.Celulares.Dominio;
+
+import java.sql.Date;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "CRUD_CELULARES")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Celulares {
+@Id
+int id;
+String marca;
+String modelo;
+String color;
+String so;
+int capacidad;
+String compania;
+String telefono;
+double precio;
+
+@Column(name = "FECHA_PROMOCION")
+Date fechaPromocion;
+
+@Column(name = "FECHA_VENT")
+Date fechaVenta;
+
+
+}
+
+

@@ -1,0 +1,16 @@
+package com.mx.Celulares.Dominio;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "CRUD_CELULARES")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Celulares {
+
+}

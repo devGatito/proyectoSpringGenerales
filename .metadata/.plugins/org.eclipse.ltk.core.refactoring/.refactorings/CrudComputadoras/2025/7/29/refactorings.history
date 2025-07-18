@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.mx.CrudComputadoras.Controlleer&apos; to &apos;com.mx.CrudComputadoras.Controller&apos;&#x0A;- Original project: &apos;CrudComputadoras&apos;&#x0A;- Original element: &apos;CrudComputadoras/src/main/java/com.mx.CrudComputadoras.Controlleer&apos;&#x0A;- Renamed element: &apos;CrudComputadoras/src/main/java/com.mx.CrudComputadoras.Controller&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.mx.CrudComputadoras.Controlleer&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.mx.CrudComputadoras.Controlleer" name="com.mx.CrudComputadoras.Controller" qualified="false" references="true" stamp="1752827297876" textual="false" version="1.0"/>
+</session>

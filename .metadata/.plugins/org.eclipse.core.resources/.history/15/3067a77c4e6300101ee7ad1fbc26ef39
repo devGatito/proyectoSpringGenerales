@@ -1,0 +1,65 @@
+package com.mx.CrudAutosJunit.Controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mx.CrudAutosJunit.Dominio.Autos;
+import com.mx.CrudAutosJunit.Services.Implementacion;
+
+@RestController
+@RequestMapping(path="Api/WebService")
+@CrossOrigin("*")
+
+
+public class AutosWS {	
+	
+	@Autowired
+Implementacion imp;
+	
+	@PostMapping("/guardar")
+	 public void guardar(@RequestBody Autos autos) {
+		imp.guardar(autos);
+    }
+	
+	@PostMapping("/editar")
+	public void editar(@RequestBody Autos auto) {
+		imp.editar(auto);
+		
+	}
+	
+	@GetMapping("/listar")
+	public List<Autos> listar() {
+		return imp.listar();
+	}
+	
+    @DeleteMapping("/eliminar")
+	public void eliminar(@RequestBody Autos auto) {
+		//TODO: process POST request
+		imp.eliminar(auto);
+		
+		
+	}
+    
+  
+    
+    
+	
+
+    @PostMapping("/buscar")
+    public Autos buscar(Autos auto) {
+    	return imp.buscar(auto);
+    	
+    	
+    }
+
+
+
+}

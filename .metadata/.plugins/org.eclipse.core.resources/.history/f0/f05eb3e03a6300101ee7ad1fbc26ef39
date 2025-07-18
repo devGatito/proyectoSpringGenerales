@@ -1,0 +1,32 @@
+package com.mx.CrudAutosJunit;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest /* 
+JNIT es para realizar pruebas unitarias
+* Es un framework de la estrucura para realizar pruebas unitarias
+* trabajas con las notaciones es necesario para incluir una libreria o dependencia que ya incluye de 
+* que ya incluye en la mayoria de las tecnologias java,eclipse, maeven, netbeans, bluej, cuando realizamos pruebas unitarias
+* es practicamente utilizar codigo duro, puede estar encendido el servidor o no 
+* unitaria llega a la bd
+* 
+* Mokito - es un framework de junit y solo pruebas de simulacion se utliza regularmente para verificar que los metodos 
+*/
+
+/*
+ * 
+ * @test
+ * order(1).... order(n)
+ * @before, @After
+ * @ignore
+ * 
+ * @testtRunner para ello arracamos la clase pruebas initarias 
+ */
+class CrudAutosJunitApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

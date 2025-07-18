@@ -1,0 +1,19 @@
+package com.mx.CrudAutosJunit;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest /* 
+JNIT es para realizar pruebas unitarias
+* Es un framework de la estrucura para realizar pruebas unitarias
+* trabajas con las notaciones es necesario para incluir una libreria o dependencia que ya incluye de 
+* que ya incluye en la mayoria de las tecnologias java,eclipse, maeven, netbeans, bluej, cuando realizamos pruebas unitarias
+* es practicamente utilizar codigo duro
+*/
+class CrudAutosJunitApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

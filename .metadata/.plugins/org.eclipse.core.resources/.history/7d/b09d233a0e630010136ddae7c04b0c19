@@ -1,0 +1,10 @@
+package com.mx.Celulares.Dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.mx.Celulares.Dominio.Celulares;
+
+public interface CelularDao extends CrudRepository<Celulares, Integer>{
+	
+
+}

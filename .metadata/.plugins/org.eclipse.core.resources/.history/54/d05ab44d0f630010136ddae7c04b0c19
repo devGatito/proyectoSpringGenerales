@@ -1,0 +1,39 @@
+package com.mx.Celulares.Services;
+
+import java.util.List;
+
+import com.mx.Celulares.Dominio.Celulares;
+
+public class Implementacion  implements CelularService{
+
+	@Override
+	public void guardar(Celulares celular) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eliminar(Celulares celular) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editar(Celulares celular) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Celulares buscar(Celulares celular) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Celulares> listar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

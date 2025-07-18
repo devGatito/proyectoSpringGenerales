@@ -1,0 +1,9 @@
+package com.mx.CrudCanciones.Dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.mx.CrudCanciones.Dominio.Canciones;
+
+public interface CancionesDao extends CrudRepository<Canciones, Integer> {
+
+}

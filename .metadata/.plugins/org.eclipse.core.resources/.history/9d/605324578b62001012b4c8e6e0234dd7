@@ -1,0 +1,14 @@
+package com.mx.Empleados.Dao;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.mx.Empleados.Dominio.Empleados;
+
+@Repository // indica que va tener acceso a la bd generica 
+
+
+public interface EmpleadosDao extends CrudRepository<Empleados, Integer>{
+	
+
+}

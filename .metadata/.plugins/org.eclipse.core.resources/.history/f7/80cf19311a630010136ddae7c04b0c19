@@ -1,0 +1,127 @@
+package com.mx.Celulares.Dominio;
+
+import java.sql.Date;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "CRUD_CELULARES")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Celulares {
+@Id
+int id;
+String marca;
+String modelo;
+String color;
+String so;
+int capacidad;
+String compania;
+String telefono;
+double precio;
+
+@Column(name = "FECHA_PROMOCION")
+Date fechaPromocion;
+
+@Column(name = "FECHA_VENTA")
+Date fechaVenta;
+
+public int getId() {
+	return id;
+}
+
+public void setId(int id) {
+	this.id = id;
+}
+
+public String getMarca() {
+	return marca;
+}
+
+public void setMarca(String marca) {
+	this.marca = marca;
+}
+
+public String getModelo() {
+	return modelo;
+}
+
+public void setModelo(String modelo) {
+	this.modelo = modelo;
+}
+
+public String getColor() {
+	return color;
+}
+
+public void setColor(String color) {
+	this.color = color;
+}
+
+public String getSo() {
+	return so;
+}
+
+public void setSo(String so) {
+	this.so = so;
+}
+
+public int getCapacidad() {
+	return capacidad;
+}
+
+public void setCapacidad(int capacidad) {
+	this.capacidad = capacidad;
+}
+
+public String getCompania() {
+	return compania;
+}
+
+public void setCompania(String compania) {
+	this.compania = compania;
+}
+
+public String getTelefono() {
+	return telefono;
+}
+
+public void setTelefono(String telefono) {
+	this.telefono = telefono;
+}
+
+public double getPrecio() {
+	return precio;
+}
+
+public void setPrecio(double precio) {
+	this.precio = precio;
+}
+
+public Date getFechaPromocion() {
+	return fechaPromocion;
+}
+
+public void setFechaPromocion(Date fechaPromocion) {
+	this.fechaPromocion = fechaPromocion;
+}
+
+public Date getFechaVenta() {
+	return fechaVenta;
+}
+
+public void setFechaVenta(Date fechaVenta) {
+	this.fechaVenta = fechaVenta;
+}
+
+
+}
+
+

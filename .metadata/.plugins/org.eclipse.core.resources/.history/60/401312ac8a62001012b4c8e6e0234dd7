@@ -1,0 +1,5 @@
+package com.mx.Empleados.Services;
+
+public interface Metodos {
+
+}
